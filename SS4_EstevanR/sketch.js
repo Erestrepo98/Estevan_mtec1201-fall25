@@ -252,14 +252,14 @@ function draw() {
 
   currentTime = millis();
 
-  if (circlegrow > height) 
+  if (circlegrow > height || circlegrow < -height) 
   {
     image(Hikaru, 880, 375,width/4,height/4);
     fill(200,30,50)
     text("BLUNDER",500,375)
   }
   
-  if (triXR > width)
+  if (triXR > width || triXR < -width)
   {
     image(Gotham, 125, 375,width/4, height/4);
     fill(254,138,232)
