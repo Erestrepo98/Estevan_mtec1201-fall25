@@ -52,6 +52,17 @@ function draw() {
     circlegrow = circlegrow - 4
   }
 
+    fill(255,0,255)
+  for(let lineX = mouseX; lineX<=width; lineX=lineX+40){
+    for(let lineY = mouseY; lineY<=height; lineY=lineY+40)
+    line(lineX-200,lineY+200,lineX+200,lineY-200)
+  }
+
+  for(let lineX = mouseX; lineX<=width; lineX=lineX+40){
+    for(let lineY = mouseY; lineY<=height; lineY=lineY+40)
+    line(lineX-200,lineY-200,lineX+200,lineY+200)
+  }
+
   fill(255,0,255)
   for(let lineX = mouseX; lineX<=width ; lineX=lineX+40){
     line(lineX,200)
